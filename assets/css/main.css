@@ -3308,7 +3308,59 @@ input, select, textarea {
 		text-align: center;
 		z-index: 1;
 		min-height: 100vh;
+		
+		
 	}
+	.button-row .button:first-child {
+		background-color: #ffbc37;
+		color: #212931;
+		border: none;
+	  }
+	  
+	  .button-row .button:first-child:hover {
+		background-color: #e5a82f;
+	  }
+	  
+	.content {
+		text-align: left; /* Align text to the left */
+		padding: 20px; /* Add some padding for spacing */
+	  }
+	  .button-row {
+		display: flex;
+		justify-content: center;
+		gap: 1rem;
+		margin-top: 1rem;
+	  }
+	  
+	  .button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0.5rem 1.5rem;
+		border-radius: 25px;
+		font-weight: bold;
+		text-align: center;
+		text-decoration: none;
+		transition: background-color 0.3s ease, color 0.3s ease;
+	  }
+	  
+	  .button:first-child {
+		background-color: #ffbc37;
+		color: #000000;
+	  }
+	  
+	  
+	.intro-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		gap:30rem;
+	  }
+	  
+	
+	  
+	  
 
 		#intro input, #intro select, #intro textarea {
 			color: #ffffff;
@@ -3602,28 +3654,29 @@ input, select, textarea {
 
 /* Nav */
 
-	#nav {
-		color: #ffffff;
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		-moz-transition: -moz-transform 1s ease, opacity 1s ease;
-		-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
-		-ms-transition: -ms-transform 1s ease, opacity 1s ease;
-		transition: transform 1s ease, opacity 1s ease;
-		background: rgba(255, 255, 255, 0.175);
-		height: 4rem;
-		line-height: 4rem;
-		margin: -4rem auto 0 auto;
-		overflow: hidden;
-		padding: 0 2rem 0 0;
-		position: relative;
-		width: calc(100% - 4rem);
-		max-width: 72rem;
-		z-index: 2;
-	}
+#nav {
+	display: flex;
+	justify-content: space-between;
+	background-color: #555; /* Adjust the color as needed */
+    position: relative;
+    margin: 0 auto;
+    width: calc(100% - 10rem);
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    z-index: 3;
+  }
 
+  #nav {
+    background-color: #555; /* Adjust the color as needed */
+    position: relative;
+    margin: 0 auto;
+    width: calc(100% - 10rem);
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    z-index: 3; /* Increased z-index to ensure it's above the main content */
+}
 		#nav ul.divided li {
 			border-top-color: #ffffff;
 		}
@@ -3752,14 +3805,17 @@ input, select, textarea {
 
 /* Main */
 
-	#main {
-		background-color: #ffffff;
-		position: relative;
-		margin: 0 auto;
-		width: calc(100% - 4rem);
-		max-width: 72rem;
-		z-index: 2;
-	}
+#main {
+    background-color: #ffffff;
+    position: relative;
+    margin: 0 auto;
+    width: calc(100% - 10rem);
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    z-index: 2;
+}
+
 
 		#main > * {
 			padding: 4rem 4rem 2rem 4rem ;
