@@ -4136,7 +4136,7 @@ input, select, textarea {
 			#footer input[type="reset"].primary,
 			#footer input[type="button"].primary,
 			#footer button.primary,
-			#footer .button.primary {
+			#footer button.primary {
 				background-color: #717981;
 				box-shadow: none;
 				color: #f5f5f5 !important;
@@ -4148,6 +4148,10 @@ input, select, textarea {
 				#footer button.primary:hover,
 				#footer .button.primary:hover {
 					background-color: #18bfef;
+				}
+
+				.button{
+					
 				}
 
 		#footer label {
