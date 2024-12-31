@@ -3349,6 +3349,7 @@ input, select, textarea {
 		color: #000000;
 	  }
 	  
+
 	  
 	.intro-container {
 		display: flex;
@@ -3538,6 +3539,63 @@ input, select, textarea {
 				}
 
 		}
+
+ /* Menu bar  */
+.menu-bar {
+  /* background-color: #212931; */
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.menu-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 50px;
+  gap: 100px;
+
+}
+
+.menu-bar li {
+  margin: 0 15px;
+}
+
+.menu-bar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 900;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+  transition: color 0.2s ease-in-out;
+}
+
+
+.menu-bar a:hover,
+.menu-bar a.active {
+  color: #18bfef;
+  
+}
+
+@media screen and (max-width: 736px) {
+	.menu-bar ul {
+		display: flex;
+		justify-content: flex-end;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		gap: 20px;
+	  }
+
+	  .menu-bar li {
+		margin: 0;
+	  }
+}
 
 /* Header */
 
